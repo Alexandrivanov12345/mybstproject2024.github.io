@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+.anim{
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+body{
+    font-family: Kanit, serif;
+    background: linear-gradient(90deg, #000a8f 0%, #000000 91%);
+}
+p{
+    color: whitesmoke;
+}
+.turn-your-phone{
+    display: none;
+    color: whitesmoke;
+    text-align: center;
+    background-color: #000000;
+    padding: 2rem;
+}
+.navbar-brand img{
+    max-width: 50px;
+}
+.nav-link{
+    color: whitesmoke;
+}
+.navbar-nav .nav-link.active{
+    color: aquamarine;
+}
+.card{
+    background: linear-gradient(180deg, #171717 81%, #00a4db 100%);
+}
+.card h5{
+    color: whitesmoke;
+}
+.card a{
+    background-color: #171717;
+}
+.card-body>p>a{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+}
+.card-body>h5>a{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+}
+.right-panel .card{
+    background: linear-gradient(90deg, #171717 81%, #000a8f 100%);
+}
+.carousel img{
+    max-width: 110%;
+}
+@media(max-width: 600px){
+    .carousel{
+        display: none;
+    }
+    .turn-your-phone{
+        display: block;
+    }
+}
+footer p{
+    color: whitesmoke;
+}
+footer{
+    background: linear-gradient(90deg, #00bfff 0%, #000000 10%, #000000 90%, #00bfff 100%);
+}
+.btn{
+    background: linear-gradient(45deg, #000594 0%, #000000 100%);
+    margin: 2rem;
+}
+.sea-video-div{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.sea-video-div video{
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+.sea-video-text{
+    z-index: 3;
+    color: rgb(255, 255, 255);
+}
+.effect{
+    background-color: rgba(0, 0, 0, 0.354);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 70vh;
+    z-index: 2;
+}
